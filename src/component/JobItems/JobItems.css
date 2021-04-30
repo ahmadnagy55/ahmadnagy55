@@ -1,0 +1,104 @@
+/*box-shadow rgb(205, 228, 230)*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0fafb;
+  font-family: "Spartan", sans-serif;
+}
+.JobItemList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px rgb(205, 228, 230);
+  background-color: white;
+  height: 10rem;
+  width: 80%;
+  margin: 0 auto 1.5rem auto;
+  padding: 10px 30px;
+  position: relative;
+}
+.pseudo::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: #5aa6a2;
+  left: 0px;
+  border-radius: 5px 0 0 5px;
+}
+.LeftItem {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.LeftItem-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100%;
+  margin-left: 1.4rem;
+}
+.company {
+  font-weight: 700;
+  text-align: left;
+  color: hsl(180, 29%, 50%);
+}
+.new {
+  color: #e9ffff;
+  background-color: hsl(180, 29%, 50%);
+  border-radius: 23px;
+  margin-left: 1rem;
+  padding: 7px;
+  font: 0.7em sans-serif;
+}
+.featured {
+  color: #e9ffff;
+  background-color: #2f3e3b;
+  border-radius: 25px;
+  margin-left: 1rem;
+  padding: 7px;
+  font: 0.7em sans-serif;
+}
+.position {
+  font-weight: 700;
+  font-size: 20px;
+  color: #1d2726;
+  cursor: pointer;
+}
+.position:hover {
+  color: hsl(180, 29%, 50%);
+}
+.bottomItem {
+  color: #8b8f8e;
+  padding-left: 0;
+  margin: 0px;
+  display: flex;
+  list-style: none;
+}
+.bottomItem li:not(:first-child) {
+  margin-left: 15px;
+}
+.RightItem ul {
+  color: hsl(180, 29%, 50%);
+  font-weight: bold;
+  list-style: none;
+}
+.RightItem li {
+  display: inline-block;
+  margin-left: 15px;
+  font-weight: 700;
+  padding: 6px;
+  cursor: pointer;
+  background-color: rgb(238, 248, 247);
+  border-radius: 5px;
+}
+.RightItem li:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: #e3f6fa;
+}
