@@ -102,3 +102,17 @@ body {
   background-color: hsl(180, 29%, 50%);
   color: #e3f6fa;
 }
+@media (max-width: 1294px) {
+  .JobItemList {
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .LeftItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bottomItem ul {
+    padding-left: 0;
+  }
+}

@@ -36,8 +36,8 @@ function JobItems () {
                         <ul>
                         <li className="role">{item.role}</li>
                         <li className="level">{item.level}</li>
-                        {item.languages? item.languages.map(lang => <li className="languages0">{lang}</li>) : "" }
-                        {item.tools? item.tools.map(tool =><li className="tools">{tool}</li> ) : ""}
+                        {item.languages? item.languages.map(lang => <li key={Math.random()} className="languages0">{lang}</li>) : "" }
+                        {item.tools? item.tools.map(tool =><li key={Math.random()} className="tools">{tool}</li> ) : ""}
                         </ul>
                         </div>
                 
