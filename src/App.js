@@ -10,10 +10,7 @@ function App() {
       <header className="App-header">
         <img src={bgHeaderDeskTop} className="App-logo" alt="bg-header-desktop" />
         </header>
-        <div className="filtredBar"> 
-              <span>Filterd Data</span>
-              <span>&times;</span>
-        </div>
+
         <JobItems/>
     </div>
     
