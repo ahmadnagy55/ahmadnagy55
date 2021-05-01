@@ -1,0 +1,9 @@
+.filteredBar {
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px rgb(205, 228, 230);
+  background-color: white;
+  height: 10rem;
+  width: 80%;
+  margin: 0 auto 1.5rem auto;
+  padding: 10px 30px;
+}
