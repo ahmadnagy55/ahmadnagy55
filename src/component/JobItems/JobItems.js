@@ -22,7 +22,7 @@ function JobItems () {
                       {item.new ? <span className='new'>NEW!</span> : ""}
                       {item.featured ? <span className='featured'>FEATURED</span> : ""}
                       </div>
-                      <span className="position">{item.position}</span>
+                      <div className="position">{item.position}</div>
                         <div>
                       <ul className="bottomItem">
                         <li className="postedAt">{item.postedAt} &#183;</li>
@@ -32,13 +32,14 @@ function JobItems () {
                         </div>
                         </div>
                       </div>
+                      <div className="disable"></div>
                       <div className="RightItem">
-                        <ul>
-                        <li className="role">{item.role}</li>
-                        <li className="level">{item.level}</li>
-                        {item.languages? item.languages.map(lang => <li key={Math.random()} className="languages0">{lang}</li>) : "" }
-                        {item.tools? item.tools.map(tool =><li key={Math.random()} className="tools">{tool}</li> ) : ""}
-                        </ul>
+                        <div className='container'>
+                        <div className="r-item role">{item.role}</div>
+                        <div className="r-item level">{item.level}</div>
+                        {item.languages? item.languages.map(lang => <div key={Math.random()} className="r-item languages0">{lang}</div>) : "" }
+                        {item.tools? item.tools.map(tool =><div key={Math.random()} className="r-item tools">{tool}</div> ) : ""}
+                        </div>
                         </div>
                 
                 </div>

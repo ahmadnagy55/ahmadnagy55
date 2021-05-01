@@ -56,6 +56,7 @@ body {
   margin-left: 1rem;
   padding: 7px;
   font: 0.7em sans-serif;
+  display: inline-block;
 }
 .featured {
   color: #e9ffff;
@@ -64,6 +65,7 @@ body {
   margin-left: 1rem;
   padding: 7px;
   font: 0.7em sans-serif;
+  display: inline-block;
 }
 .position {
   font-weight: 700;
@@ -84,35 +86,101 @@ body {
 .bottomItem li:not(:first-child) {
   margin-left: 15px;
 }
-.RightItem ul {
+.RightItem .container {
   color: hsl(180, 29%, 50%);
   font-weight: bold;
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-direction: row;
 }
-.RightItem li {
-  display: inline-block;
-  margin-left: 15px;
+.RightItem .r-item {
+  /* display: inline-block; */
+  margin-right: 15px;
   font-weight: 700;
-  padding: 6px;
+  padding: 8px;
   cursor: pointer;
   background-color: rgb(238, 248, 247);
   border-radius: 5px;
 }
-.RightItem li:hover {
+.RightItem .r-item:hover {
   background-color: hsl(180, 29%, 50%);
   color: #e3f6fa;
 }
 @media (max-width: 1294px) {
   .JobItemList {
-    height: fit-content;
+    font-size: small;
+  }
+  .position {
+    font-size: large;
+  }
+  .LeftItem {
+    /* flex-direction: column;
+    align-items: flex-start; */
+  }
+  .RightItem ul {
+    /* padding-left: 0; */
+  }
+}
+@media (max-width: 1142px) {
+  .JobItemList {
+    width: 60%;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 0.7rem auto;
+    height: fit-content;
+  }
+
+  .LeftItem-col {
+    margin: 0.7rem;
+  }
+  .disable {
+    border-top: 1px solid #d9dcdb;
+    width: 100%;
+    margin: 0.7rem 0;
+  }
+  .position {
+    margin: 0.7rem 0;
+    text-align: start;
+    font-size: medium;
+  }
+  .RightItem .r-item {
+    margin-bottom: 0.7rem;
+  }
+}
+@media (max-width: 693px) {
+  .JobItemList {
+    width: 80%;
+    position: relative;
+    margin: 3.5rem auto;
+  }
+  .logo {
+    position: absolute;
+    top: -40px;
   }
   .LeftItem {
     flex-direction: column;
     align-items: flex-start;
   }
-  .bottomItem ul {
-    padding-left: 0;
+  .LeftItem-col {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 375px) {
+  .JobItemList {
+    font-size: 11px;
+  }
+  .logo {
+    width: 70px;
+  }
+  .LeftItem-col {
+    margin-left: 0;
+  }
+  .position {
+    font-size: small;
   }
 }
