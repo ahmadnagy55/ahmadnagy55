@@ -32,7 +32,7 @@ function JobItems () {
                         </div>
                         </div>
                       </div>
-                      <div className="disable"></div>
+                      <div className="break-line"></div>
                       <div className="RightItem">
                         <div className='container'>
                         <div className="r-item role">{item.role}</div>

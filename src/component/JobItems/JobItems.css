@@ -22,6 +22,9 @@ body {
   padding: 10px 30px;
   position: relative;
 }
+.JobItemList:first-of-type {
+  margin-top: 4rem;
+}
 .pseudo::before {
   content: "";
   position: absolute;
@@ -138,7 +141,7 @@ body {
   .LeftItem-col {
     margin: 0.7rem;
   }
-  .disable {
+  .break-line {
     border-top: 1px solid #d9dcdb;
     width: 100%;
     margin: 0.7rem 0;
