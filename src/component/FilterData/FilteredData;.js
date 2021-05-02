@@ -1,13 +1,12 @@
 import React from 'react';
 import './FilteredData.css';
 
-const FilteredData = () => {
+function FilteredData()  {
     return (
-        <div className="filteredBar"> 
-        <span>Filtered Data</span>
-        <span>&times;</span>
+        <div className="filteredBar disable"> 
+        <div className='dataType'>Filtered Data</div>
+        <div className='clear'>Clear</div>
         </div>
     )
 }
-
 export default FilteredData;
