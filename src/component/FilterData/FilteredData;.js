@@ -1,12 +1,15 @@
-import React from 'react';
-import './FilteredData.css';
+// import React from 'react';
+// import './FilteredData.css';
 
-function FilteredData()  {
-    return (
-        <div className="filteredBar disable"> 
-        <div className='dataType'>Filtered Data</div>
-        <div className='clear'>Clear</div>
-        </div>
-    )
-}
-export default FilteredData;
+// const FilteredData =  () => {
+// let handelClear =  () => {
+//     document.querySelector(".filteredBar").classList.add("disable");
+//             }
+//     return (
+//         <div className="filteredBar"> 
+//         <div className='dataType'>Filtered Data</div>
+//         <div className='clear' onClick={handelClear}>Clear</div>
+//         </div>
+//     )
+// }
+// export default FilteredData;

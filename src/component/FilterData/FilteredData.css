@@ -22,7 +22,7 @@
   text-decoration: underline;
 }
 .disable {
-  /* display: none; */
+  display: none;
 }
 @media (max-width: 1142px) {
   .filteredBar {
