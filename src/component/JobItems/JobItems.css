@@ -66,13 +66,10 @@ body {
   padding: 10px 30px;
   position: relative;
 }
-<<<<<<< HEAD
 
-=======
 .JobItemList:first-of-type {
   margin-top: 4rem;
 }
->>>>>>> aaf1c5f31fb00aa90a9749120d543201836c5e73
 .pseudo::before {
   content: "";
   position: absolute;
