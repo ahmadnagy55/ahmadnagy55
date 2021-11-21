@@ -47,6 +47,7 @@ body {
   }
 }
 /* end filtered Bar */
+
 /* start Job Item List */
 .JobItemList:first-of-type {
   margin-top: 4rem;
@@ -130,23 +131,21 @@ body {
 .bottomItem li:not(:first-child) {
   margin-left: 15px;
 }
-.RightItem .container {
-  color: hsl(180, 29%, 50%);
-  font-weight: bold;
-  list-style: none;
+.RightItem .container,
+.dataType {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: space-between;
   flex-direction: row;
 }
-.RightItem .r-item {
-  /* display: inline-block; */
+.r-item {
   margin-right: 15px;
   font-weight: 700;
   padding: 8px;
   cursor: pointer;
   background-color: rgb(238, 248, 247);
+  color: hsl(180, 29%, 50%);
   border-radius: 5px;
 }
 .RightItem .r-item:hover {
@@ -159,13 +158,6 @@ body {
   }
   .position {
     font-size: large;
-  }
-  .LeftItem {
-    /* flex-direction: column;
-    align-items: flex-start; */
-  }
-  .RightItem ul {
-    /* padding-left: 0; */
   }
 }
 @media (max-width: 1142px) {
