@@ -58,9 +58,15 @@ function JobItems () {
                       </ul>
                         </div>
                         </div>
+<<<<<<< HEAD
                   </div>
                       <div className="break-line"></div>
                   <div className="RightItem">
+=======
+                      </div>
+                      <div className="break-line"></div>
+                      <div className="RightItem">
+>>>>>>> aaf1c5f31fb00aa90a9749120d543201836c5e73
                         <div className='container'>
                         <div className="r-item role" onClick={handelClick}> {item.role} </div>
                         <div className="r-item level" onClick={handelClick}> {item.level} </div>
